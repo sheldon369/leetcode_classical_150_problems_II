@@ -8,6 +8,7 @@ git init
 git add . 
 git commit -m "第一次提交"
 git remote add origin https://github.com/你的用户名/仓库名.git
+git remote -v
 git branch -M main
 git push -u origin main
 
@@ -18,3 +19,7 @@ git push origin main
 
 std::cerr << "getUserInput() called\n"; //用于调试代码
 #include <climits> INT_MIN INT_MAX
+bool b{} //默认初始化为false
+static_cast<int>(5.5);//显式类型转换
+const double gravity { 9.8 };  // 使用 const 修饰常变量
+std::getline(std::cin >> std::ws, name); // 将一整行输入读取到 name
