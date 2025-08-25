@@ -16,6 +16,8 @@ git status
 git add .
 git commit -m "说明你修改了什么"
 git push origin main
+git config --global --unset http.proxy 
+git config --global --unset https.proxy
 
 std::cerr << "getUserInput() called\n"; //用于调试代码
 #include <climits> INT_MIN INT_MAX

@@ -21,5 +21,17 @@
     <ClCompile Include="824_2_两数相加.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="825_21_合并两个有序链表.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="825_138_随机链表的复制.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="825_92_反转链表II.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="825_25_K个一组反转链表.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
