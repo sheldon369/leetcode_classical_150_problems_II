@@ -33,5 +33,20 @@
     <ClCompile Include="825_25_K个一组反转链表.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="826_19_删除链表的倒数第n个节点.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="826_82_删除排序列表中的重复元素II.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="826_61_旋转链表.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="826_86_分隔链表.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="826_146_LRU缓存.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
