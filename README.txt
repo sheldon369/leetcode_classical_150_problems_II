@@ -25,3 +25,5 @@ bool b{} //默认初始化为false
 static_cast<int>(5.5);//显式类型转换
 const double gravity { 9.8 };  // 使用 const 修饰常变量
 std::getline(std::cin >> std::ws, name); // 将一整行输入读取到 name
+std::unorder_map O(1)查找元素 count / find (map和set的使用基本一致，map的值字段可以设为结构体存储更多信息)
+char数组实际上等价于一个%s类型的串

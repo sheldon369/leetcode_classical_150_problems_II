@@ -24,5 +24,20 @@
     <ClCompile Include="string_view简介.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="vector简介.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="list简介.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="set简介.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="map简介.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="树的四种遍历.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
