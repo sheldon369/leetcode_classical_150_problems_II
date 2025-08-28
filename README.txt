@@ -18,6 +18,9 @@ git commit -m "说明你修改了什么"
 git push origin main
 git config --global --unset http.proxy 
 git config --global --unset https.proxy
+Test-NetConnection github.com -Port 443
+git config --global http.proxy http://127.0.0.1:7890
+git config --global https.proxy http://127.0.0.1:7890
 
 std::cerr << "getUserInput() called\n"; //用于调试代码
 #include <climits> INT_MIN INT_MAX

@@ -13,12 +13,15 @@ struct QueueNode {
 	bool isLeft;
 };
 
-void LevelOrder(TreeNode* proot) {//广度遍历
+void LevelOrder(TreeNode* proot) {//层次遍历
+	if (!proot)//若root为空，无法访问内部字段left，right
+		return;
 	queue<TreeNode*> pos;
 	pos.push(proot);
 	while (pos.empty() == false) {
 		TreeNode* pCur = pos.front();
 		printf("%c", pCur->data);
+		pos.pop();
 		if (pCur->left != NULL) {
 			pos.push(pCur->left);
 		}

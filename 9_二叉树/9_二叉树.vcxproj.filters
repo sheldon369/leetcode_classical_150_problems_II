@@ -30,5 +30,20 @@
     <ClCompile Include="827_105_从前序与中序遍历序列构造二叉树.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="828_106_从中序与后序遍历序列构造二叉树.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="828_117_填充每个结点的下一个右侧结点指针II.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="828_114_二叉树展开为链表.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="828_112_路径总和.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="828_129_求根节点到叶节点数字之和.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
