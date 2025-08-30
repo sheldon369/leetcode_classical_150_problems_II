@@ -30,3 +30,5 @@ const double gravity { 9.8 };  // 使用 const 修饰常变量
 std::getline(std::cin >> std::ws, name); // 将一整行输入读取到 name
 std::unorder_map O(1)查找元素 count / find (map和set的使用基本一致，map的值字段可以设为结构体存储更多信息)
 char数组实际上等价于一个%s类型的串
+auto 为自动类型
+vector<int>{levelList.begin(), levelList.end()}//levelist是一个deque<int>类型的双端队列，使用它的迭代器范围复制到vector身上

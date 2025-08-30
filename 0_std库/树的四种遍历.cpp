@@ -18,16 +18,36 @@ void LevelOrder(TreeNode* proot) {//层次遍历
 		return;
 	queue<TreeNode*> pos;
 	pos.push(proot);
-	while (pos.empty() == false) {
+	while (!pos.empty()) {
 		TreeNode* pCur = pos.front();
 		printf("%c", pCur->data);
 		pos.pop();
-		if (pCur->left != NULL) {
+		if (pCur->left) {
 			pos.push(pCur->left);
 		}
-		if (pCur->right != NULL) {
+		if (pCur->right) {
 			pos.push(pCur->right);
 		}
+	}
+}
+
+void BFS(TreeNode* proot) {//带当前层次的层次遍历
+	if (!proot)//若root为空，无法访问内部字段left，right
+		return;
+	queue<pair<TreeNode*,int>> pos;
+	pos.push({ proot , 0 });
+	while (!pos.empty()) {
+		TreeNode* pCur = pos.front().first;
+		int lCur = pos.front().second;
+		printf("%c", pCur->data);
+		
+		if (pCur->left) {
+			pos.push({ pCur->left,lCur + 1 });
+		}
+		if (pCur->right) {
+			pos.push({ pCur->right,lCur + 1 });
+		}
+		pos.pop();
 	}
 }
 
