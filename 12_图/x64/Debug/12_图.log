@@ -1,0 +1,6 @@
+﻿  831_130_被围绕的区域.cpp
+E:\desktop\剑指offer\classical_150_II\12_图\831_130_被围绕的区域.cpp(22,15): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+E:\desktop\剑指offer\classical_150_II\12_图\831_130_被围绕的区域.cpp(22,32): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+E:\desktop\剑指offer\classical_150_II\12_图\831_130_被围绕的区域.cpp(35,15): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+E:\desktop\剑指offer\classical_150_II\12_图\831_130_被围绕的区域.cpp(36,15): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+  12_图.vcxproj -> E:\desktop\剑指offer\classical_150_II\6_区间\x64\Debug\12_图.exe
