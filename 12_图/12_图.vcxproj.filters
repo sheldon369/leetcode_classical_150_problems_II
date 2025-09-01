@@ -21,5 +21,17 @@
     <ClCompile Include="831_130_被围绕的区域.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="901_133_克隆图.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="901_399_除法求值.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="901_207_课程表.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="901_210_课程表II.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
