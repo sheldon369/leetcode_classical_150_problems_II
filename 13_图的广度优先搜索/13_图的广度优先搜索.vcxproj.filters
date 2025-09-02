@@ -18,5 +18,11 @@
     <ClCompile Include="902_909_蛇梯棋.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="902_433_最小基因变化.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="902_127_单词接龙.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

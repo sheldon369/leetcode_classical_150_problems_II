@@ -1,0 +1,5 @@
+﻿  902_909_蛇梯棋.cpp
+E:\desktop\剑指offer\classical_150_II\13_图的广度优先搜索\902_909_蛇梯棋.cpp(26,15): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+E:\desktop\剑指offer\classical_150_II\13_图的广度优先搜索\902_909_蛇梯棋.cpp(35,15): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+E:\desktop\剑指offer\classical_150_II\13_图的广度优先搜索\902_909_蛇梯棋.cpp(59,15): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+  13_图的广度优先搜索.vcxproj -> E:\desktop\剑指offer\classical_150_II\6_区间\x64\Debug\13_图的广度优先搜索.exe
