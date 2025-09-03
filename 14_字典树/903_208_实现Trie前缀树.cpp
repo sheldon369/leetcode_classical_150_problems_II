@@ -18,3 +18,56 @@ using namespace std;
 
 //分析：将串中每个字符（26个小写字母）为结点，构造26叉树（其中包含大量空结点）。以数字索引访问结点，同时设计isEnd字段标记当前所在字符是否是单词的结尾
 
+struct TrieNode {
+    bool isEnd;
+    vector<TrieNode*> children;
+    TrieNode() : isEnd(false), children(26) {}//初始化26个nullptr孩子指针
+};
+
+class Trie {
+private:
+    TrieNode* root;
+public:
+    Trie() {
+        root = new TrieNode();
+    }
+
+    void insert(string word) {
+        TrieNode* pCur = root;
+        int n = word.length();
+        for (int i = 0;i < n;i++) {
+            int ch = word[i] - 'a';
+            if (!pCur->children[ch])//否则之前的某些串已经完成了该项构造
+                pCur->children[ch] = new TrieNode();
+            pCur = pCur->children[ch];
+            if (i == n - 1)
+                pCur->isEnd = true;
+        }
+    }
+
+    bool search(string word) {
+        TrieNode* pCur = root;
+        int n = word.length();
+        for (int i = 0;i < n;i++) {
+            int ch = word[i] - 'a';
+            if (!pCur->children[ch] )
+                return false;
+            pCur = pCur->children[ch];
+            if (i == n - 1 && !pCur->isEnd)
+                return false;
+        }
+            return true;
+    }
+
+    bool startsWith(string prefix) {
+        TrieNode* pCur = root;
+        int n = prefix.length();
+        for (int i = 0;i < n;i++) {
+            int ch = prefix[i] - 'a';
+            if (!pCur->children[ch] )
+                return false;
+            pCur = pCur->children[ch];
+        }
+        return true;
+    }
+};
