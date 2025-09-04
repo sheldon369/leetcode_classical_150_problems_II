@@ -17,3 +17,71 @@ using namespace std;
 
 //note：同一答案可能在多条路径上出现，使用哈希集合去重
 //判断前缀时，无需每次都判断当前串是否为完整前缀，只需要比对新增结点即可
+
+struct TrieNode {
+    bool isEnd;
+    vector<TrieNode*> children;
+    string s;
+    TrieNode() : isEnd(false), children(26),s("") {}//初始化26个nullptr孩子指针
+};
+
+class Solution {
+private:
+    TrieNode* root = new TrieNode();
+    int direction[4][2] = { {1, 0}, {-1, 0}, {0, 1}, {0, -1} };
+    unordered_set<string> ans;
+public:
+    void insert(string word) {
+        TrieNode* pCur = root;
+        int n = word.length();
+        for (int i = 0;i < n;i++) {
+            int ch = word[i] - 'a';
+            if (!pCur->children[ch])//否则之前的某些串已经完成了该项构造
+                pCur->children[ch] = new TrieNode();
+            pCur = pCur->children[ch];
+        }
+        pCur->isEnd = true;
+        pCur->s = word;
+    }
+
+    void dfs(vector<vector<char>>& board,int r,int c,TrieNode* pre) {
+        int m = board.size();
+        int n = board[0].size();
+        if (r < 0 || r >= m || c < 0 || c >= n || board[r][c] == '#')
+            return;
+        char ch = board[r][c];
+        int pos = ch - 'a';//ch不为#
+        if (!pre->children[pos])
+            return;
+    
+        pre = pre->children[pos];//当前位置匹配成功
+        if (pre->isEnd)
+            ans.insert(pre->s);
+
+        board[r][c] = '#';//标记还原法
+        for (int i = 0;i < 4;i++) 
+            dfs(board, r + direction[i][0], c + direction[i][1], pre);
+        board[r][c] = ch;
+    }
+
+
+
+    vector<string> findWords(vector<vector<char>>& board, vector<string>& words) {
+        vector<string> res;
+        if (board.size() == 0)
+            return res;
+        for (auto word : words) 
+            insert(word);
+        int m = board.size();
+        int n = board[0].size();
+        for (int i = 0;i < m;i++) 
+            for (int j = 0;j < n;j++)
+                dfs(board, i, j, root);
+        res = vector<string>{ ans.begin(), ans.end() };
+        return res;
+
+    }
+};
+
+//改进：去掉isEnd判断，仅使用s；或更好的保留isEnd，添加单词时重新把s从Trie中读出
+//去掉set的使用，读出单词后将isEnd改为false避免重复读出
