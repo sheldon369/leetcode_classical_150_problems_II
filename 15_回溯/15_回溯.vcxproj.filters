@@ -24,5 +24,17 @@
     <ClCompile Include="904_46_全排列.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="905_30_组合总和.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="905_52_n皇后II.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="905_22_括号生成.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="905_79_单词搜索.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

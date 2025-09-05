@@ -130,10 +130,16 @@
     <ClCompile Include="904_17_电话号码的字母组合.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="904_46_全排列.cpp" />
+    <ClCompile Include="904_46_全排列.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
     <ClCompile Include="904_77_组合.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
+    <ClCompile Include="905_22_括号生成.cpp" />
+    <ClCompile Include="905_30_组合总和.cpp" />
+    <ClCompile Include="905_52_n皇后II.cpp" />
+    <ClCompile Include="905_79_单词搜索.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
