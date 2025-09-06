@@ -23,6 +23,23 @@ int main() {
 	}
 
 
+	template<
+		class T,//元素类型
+		class Container = std::vector<T>,//底层容器，默认为vector
+		class Compare = std::less<typename Container::value_type>//比较方式，默认为<
+	> class priority_queue;//一个新元素插入到堆的结尾，若原来的元素小于新元素则交换，因此默认为大根堆
+
+	priority_queue 的第三个模板参数要求传入一个 类型（比较器类），而不是某个函数。
+	这个比较器类必须实现 operator()，让它像函数一样被调用。
+
+	struct cmp {
+		bool operator()(ListNode* a, ListNode* b) {
+			return a->val > b->val;
+		}
+	};
+
+
+
 
 
 

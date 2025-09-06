@@ -128,6 +128,9 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="904_108_ 将有序数组转换为二叉搜索树.cpp" />
+    <ClCompile Include="906_148_排序链表.cpp" />
+    <ClCompile Include="906_23_合并K个升序链表.cpp" />
+    <ClCompile Include="906_427_建立四叉树.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
