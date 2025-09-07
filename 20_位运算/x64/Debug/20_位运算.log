@@ -1,0 +1,8 @@
+﻿  905_136_只出现一次的数字.cpp
+  905_190_颠倒二进制位.cpp
+  905_191_位1的个数.cpp
+  905_67_二进制求和.cpp
+E:\desktop\剑指offer\classical_150_II\20_位运算\905_67_二进制求和.cpp(25,20): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+  正在生成代码...
+MSVCRTD.lib(exe_main.obj) : error LNK2019: 无法解析的外部符号 main，函数 "int __cdecl invoke_main(void)" (?invoke_main@@YAHXZ) 中引用了该符号
+E:\desktop\剑指offer\classical_150_II\6_区间\x64\Debug\20_位运算.exe : fatal error LNK1120: 1 个无法解析的外部命令
