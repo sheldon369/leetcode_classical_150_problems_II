@@ -40,6 +40,27 @@ int main() {
 
 
 
+	//lambda构造法实例参考909_373
+	using T = tuple<int, int, int>;//类型别名
+	//tuple，元组，get<i>拿到元组中第i个元素
+	auto cmp = [](const T& a, const T& b) {
+		return get<0>(a) > get<0>(b);
+		};
+	priority_queue<T, vector<T>, decltype(cmp)> minHeap(cmp);//使用lambda，必须在minHeap 后面写 (cmp)
+
+	//[]中填写外部传入的参数
+	auto cmp = [&nums1, &nums2](const pair<int, int>& a, const pair<int, int>& b) {
+		return nums1[a.first] + nums2[a.second] > nums1[b.first] + nums2[b.second];
+		};
+
+
+	tuple<int, double, string> t(10, 3.14, "hello");
+	cout << get<0>(t) << endl; // 10
+	cout << get<1>(t) << endl; // 3.14
+	cout << get<2>(t) << endl; // hello
+
+
+
 
 
 

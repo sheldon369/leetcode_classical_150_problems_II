@@ -45,5 +45,8 @@
     <ClCompile Include="位运算简介.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="sort简介.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

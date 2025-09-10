@@ -27,5 +27,17 @@
     <ClCompile Include="907_33_搜索旋转排序数组.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="908_34_在排序数组中查找元素的第一个和最后一个位置.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="908_1901_寻找峰值II.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="909_4_寻找两个正序数组的中位数.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="909_153_寻找旋转排序数组中的最小值.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

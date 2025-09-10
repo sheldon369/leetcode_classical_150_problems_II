@@ -131,6 +131,8 @@
     <ClCompile Include="905_190_颠倒二进制位.cpp" />
     <ClCompile Include="905_191_位1的个数.cpp" />
     <ClCompile Include="905_67_二进制求和.cpp" />
+    <ClCompile Include="910_137_只出现一次的数字II.cpp" />
+    <ClCompile Include="910_201_数字范围按位与.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

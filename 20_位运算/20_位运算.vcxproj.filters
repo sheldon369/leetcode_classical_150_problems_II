@@ -27,5 +27,11 @@
     <ClCompile Include="905_136_只出现一次的数字.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="910_137_只出现一次的数字II.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="910_201_数字范围按位与.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

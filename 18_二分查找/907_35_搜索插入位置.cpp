@@ -25,7 +25,7 @@ public:
             else
                 l = m + 1;
 
-        }//当查询失败时，r < l,r = l-1
+        }//当查询失败时，r < l,r = l-1,l总是指向target该被顺序插入的位置
         return l;
 
     }
