@@ -48,5 +48,8 @@
     <ClCompile Include="sort简介.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="函数重载与模板.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

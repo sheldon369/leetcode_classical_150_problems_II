@@ -14,4 +14,24 @@
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
   </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="910_9_回文数.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="910_66_加一.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="910_172_阶乘后的零.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="911_50_快速幂.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="911_69_x的平方根.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="911_149_直线上最多的点数.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
 </Project>
