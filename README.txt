@@ -37,3 +37,7 @@ vector<int>{levelList.begin(), levelList.end()}//levelist是一个deque<int>类�
  unordered_set<pair<int,int>> isVisited 错误，因为c++中没用定义pair的哈希，改为set就对了
 因为unordered_set 是 哈希表，平均复杂度 O(1) 查找/插入，但需要哈希函数。
 set 是 有序树，查找/插入复杂度 O(log n)，不需要哈希函数。
+
+
+string s.find("abcd") != string ::npos// find可用于字符串的模式匹配
+assert(ptr); // 如果不应将空指针传递给函数，则可以使用断言：如果传了一个空指针，立即停止执行 (因为这种情况不应该发生)
